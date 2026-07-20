@@ -41,7 +41,7 @@ const CoursePage = async ({ params }) => {
           {course.title}
         </h1>
 
-        <p className="mt-4 text-lg">
+        <p className="mt-3 text-lg">
           👨‍🏫 <strong>Instructor:</strong> {course.instructor}
         </p>
      <p>
@@ -56,7 +56,7 @@ const CoursePage = async ({ params }) => {
      ⏳ <strong>Duration:</strong> {course.duration}
    </p>
 
-     <div className="mt-3">
+     <div className="mt-2">
        📖 <strong>Level:</strong> {course.level}
      </div>
 

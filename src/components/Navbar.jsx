@@ -72,7 +72,7 @@ export default function Navbar() {
                 </button>
               </Link>
               <Link href="/register">
-                <button className="btn btn-primary rounded-full px-6">
+                <button className="btn btn-primary rounded-full x px-6">
                  Register
                 </button>
               </Link>

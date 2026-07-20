@@ -23,7 +23,7 @@ export default function Banner() {
               Build Your
               <br />
               Dream Career
-              <span className="text-blue-600">
+              <span className="text-blue-700">
                 {" "}One Skill <span className="text-gray-900">at a Time.</span>
               </span>            
            </h1>

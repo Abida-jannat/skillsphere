@@ -69,18 +69,20 @@ const CoursesPage = async () => {
               <p>
                 👨‍🏫 {course.instructor}
               </p>
-         <div className="flex items-center mt-4">
+       <div className="flex items-center w-full mt-4">
 
-        <p className="font-medium">
-           ⭐ {course.rating}
-         </p>
+  <div className="flex items-center gap-1">
+    <span>⭐</span>
+    <span>{course.rating}</span>
+  </div>
 
-      <p className="ml-auto font-medium text-gray-600">
-        ⏱️ {course.duration}
-     </p>
+  <div className="ml-auto flex items-center gap-1">
+    <span>⏱️</span>
+    <span>{course.duration}</span>
+     </div>
 
-    </div>
-            <Link href={`/courses/${course.id}`}>
+    </div>  
+        <Link href={`/courses/${course.id}`}>
                 <button className="btn btn-primary w-full mt-5">
                   Details
                 </button>

@@ -55,7 +55,7 @@ export default function LoginPage() {
         <div className="hidden lg:flex flex-col justify-center bg-gradient-to-br from-indigo-600 to-purple-700 text-white p-14">
 
           <h1 className="text-5xl font-bold leading-tight">
-            Welcome Back
+           Welcome Back
             <br />
             to SkillSphere
           </h1>

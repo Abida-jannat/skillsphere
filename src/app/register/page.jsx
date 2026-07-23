@@ -4,6 +4,7 @@ import { useState } from "react";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import toast from "react-hot-toast";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -23,6 +24,7 @@ export default function RegisterPage() {
 
     if (!name || !email || !image || !password) {
       setError("Please fill in all fields.");
+        toast.error("Please fill in all fields.");
       return;
     }
 
@@ -38,12 +40,18 @@ export default function RegisterPage() {
 
       console.log(data);
 
-      if (error) {
-        setError(error.message || "Registration Failed");
-        return;
-      }
+    if (error) {
+    setError(error.message || "Registration Failed");
+    toast.error(error.message || "Registration Failed");
+    return;
+  }
 
-      router.push("/login");
+toast.success("Registration Successful!");
+
+setTimeout(() => {
+  router.push("/login");
+}, 1000);
+
     } catch (err) {
       console.error(err);
       setError("Something went wrong.");

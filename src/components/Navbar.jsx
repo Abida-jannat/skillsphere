@@ -58,7 +58,6 @@ export default function Navbar() {
           </li>
 
         </ul>
-
         {/* Buttons */}
 
         <div className="flex gap-3">
@@ -70,7 +69,6 @@ export default function Navbar() {
             </button>
 
           ) : (
-
             <>
               <Link href="/login">
                 <button className="btn btn-ghost">
@@ -85,9 +83,7 @@ export default function Navbar() {
               </Link>
             </>
           )}
-
         </div>
-
       </div>
 
     </nav>

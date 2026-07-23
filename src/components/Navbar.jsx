@@ -50,30 +50,37 @@ export default function Navbar() {
               Courses
             </Link>
           </li>
+
           <li>
             <Link href="/profile" className="hover:text-blue-600">
               My Profile
             </Link>
           </li>
+
         </ul>
+
         {/* Buttons */}
 
         <div className="flex gap-3">
+
           {user ? (
+
             <button className="btn btn-primary">
               Logout
             </button>
 
           ) : (
+
             <>
               <Link href="/login">
                 <button className="btn btn-ghost">
                   Login
                 </button>
               </Link>
+
               <Link href="/register">
-                <button className="btn btn-primary rounded-full x px-6">
-                 Register
+                <button className="btn btn-primary rounded-full px-6">
+                  Register
                 </button>
               </Link>
             </>
